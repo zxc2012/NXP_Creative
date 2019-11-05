@@ -1,0 +1,157 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[InterruptLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+SumSortOrder=0
+[DataLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+[Interrupts]
+Enabled=1
+[MemConfig]
+Base=1
+Manual=0
+Ddf=1
+TypeViol=0
+Stop=1
+[Simulator]
+Freq=10000000
+MultiCoreRunAll=1
+[DebugChecksum]
+Checksum=2119150498
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[CodeCoverage]
+Enabled=_ 0
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[JLinkDriver]
+CStepIntDis=_ 0
+TraceBufferSize=0x00010000
+TraceStallIfFIFOFull=0x00000000
+TracePortSize=0x00000004
+LeaveTargetRunning=_ 0
+[Jet]
+JetConnSerialNo=19173
+JetConnFoundProbes=
+DisableInterrupts=0
+LeaveRunning=0
+MultiCoreRunAll=0
+OnlineReset=Software
+PrevWtdReset=Custom
+[PlDriver]
+MemConfigValue=D:\professional software\IAR7.7\arm\CONFIG\debugger\NXP\MK60DN512xxx10.ddf
+FirstRun=0
+[ArmDriver]
+EnableCache=1
+[SWOManager]
+SamplingDivider=8192
+OverrideClock=0
+CpuClock=66048
+SwoClock=1024
+DataLogMode=0
+ItmPortsEnabled=63
+ItmTermIOPorts=1
+ItmLogPorts=0
+ItmLogFile=$PROJ_DIR$\ITM.log
+PowerForcePC=1
+PowerConnectPC=1
+[ETMTraceWindow]
+PortWidth=4
+PortMode=0
+CaptureDataValues=0
+CaptureDataAddresses=0
+CaptureDataRange=0
+DataFirst=0
+DataLast=-1
+StopWhen=0
+StallCPU=0
+NoPCCapture=0
+[Trace2]
+Enabled=0
+ShowSource=0
+[SWOTraceWindow]
+ForcedPcSampling=0
+ForcedInterruptLogs=0
+ForcedItmLogs=0
+EventCPI=0
+EventEXC=0
+EventFOLD=0
+EventLSU=0
+EventSLEEP=0
+[array_types]
+Fmt0=uint8[188]	3	0
+[watch_formats]
+Fmt0={W}42:(unsigned int)jkjk	4	0
+Fmt1={W}42:aa	3	0
+Fmt2={W}42:asdas	4	0
+Fmt3={W}42:asdasd	3	0
+Fmt4={W}42:bb	3	0
+Fmt5={W}42:dada	3	0
+Fmt6={W}42:dal	1	0
+Fmt7={W}42:dd	3	0
+Fmt8={W}42:ddd	3	0
+Fmt9={W}42:dydy	4	0
+Fmt10={W}42:haha	3	0
+Fmt11={W}42:jkjk	4	0
+Fmt12={W}42:safjk	4	0
+Fmt13={W}42:t1	4	0
+Fmt14={W}42:t2	4	0
+Fmt15={W}42:t3	4	0
+Fmt16={W}42:t4	4	0
+Fmt17={W}42:t5	4	0
+Fmt18={W}42:test	3	0
+Fmt19={W}42:wx	4	0
+Fmt20={W}42:x	4	0
+Fmt21={W}42:xixi	3	0
+Fmt22={W}42:yy	3	0
+[Trace1]
+Enabled=0
+ShowSource=1
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[DriverProfiling]
+Enabled=0
+Mode=1
+Graph=0
+Symbiont=0
+Exclusions=
+[CallStackLog]
+Enabled=0
+[CallStackStripe]
+ShowTiming=1
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Count=0
+[Aliases]
+A0=_ "E:\work\seekfree\freescale_work\传感器历程\总钻风\总钻风例程(V2版本)\例程\1.一幅图像采集完成触发中断\总钻风例程K60(上位机显示灰度图像\Libraries\drives\src\MK60_uart.c" ""
+A1=_ "E:\work\seekfree\freescale_work\传感器历程\总钻风\总钻风例程(V2版本)\例程\1.一幅图像采集完成触发中断\总钻风例程K60(上位机显示灰度图像\Libraries\drives\src\common.c" ""
+A2=_ "F:\work\seekfree\开发板\用户资料\3-开发板历程\4-应用例程\23-总钻风&2.8TFT显示图像(OK)\Projecct\USER\src\isr.c" ""
+A3=_ "F:\work\seekfree\开发板\用户资料\3-开发板历程\4-应用例程\23-总钻风&2.8TFT显示图像(OK)\Projecct\USER\src\main.c" ""
+A4=_ "G:\Users\总钻风&2.8TFT显示图像\Libraries\drives\inc\MK60DN10_dma.h" ""
+Count=5
+SuppressDialog=1

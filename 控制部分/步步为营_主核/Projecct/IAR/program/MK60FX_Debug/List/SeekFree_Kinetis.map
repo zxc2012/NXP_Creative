@@ -1,0 +1,924 @@
+###############################################################################
+#
+# IAR ELF Linker V8.22.1.15669/W32 for ARM                15/Jul/2019  15:14:13
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Exe\SeekFree_Kinetis.out
+#    Map file     =  
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\List\SeekFree_Kinetis.map
+#    Command line =  
+#        -f C:\Users\78669\AppData\Local\Temp\EW1CB5.tmp
+#        (E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\All_solution.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\Attitude_Calculation.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\BMX055.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\common.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\Communication.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\CtrDelay.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\ctrl_basic.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\ctrl_pid.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\CtrSpeed.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\DataStore.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\diskio.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\duty.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\edge_extract.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\Encoder.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\ff.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\Find_path.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\FXAS2100_FXOS8700.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\image_binaryzation.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\Init.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\IRQHandler.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\isr.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\lcd.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\main.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\menu.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\misc.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\MK60_adc.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\MK60_cmt.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\MK60_dac.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\MK60_dma.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\MK60_flash.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\MK60_ftm.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\MK60_gpio.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\MK60_i2c.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\MK60_lptmr.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\MK60_pit.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\MK60_port.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\MK60_rtc.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\MK60_sdhc.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\MK60_spi.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\MK60_systick.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\MK60_uart.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\MK60_wdog.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\Moto.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\Pos_cal.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\SEEKFREE_7725.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\SEEKFREE_FUN.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\SEEKFREE_IIC.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\SEEKFREE_L3G4200D.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\SEEKFREE_MMA8451.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\SEEKFREE_MPU6050.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\SEEKFREE_MT9V032.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\SEEKFREE_OLED.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\SEEKFREE_TSL1401.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\SoftIIC.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\startup_MK60F15.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\Switch.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\system_MK60.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\VCAN_key.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\VCAN_Servo.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\VCAN_Track.o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj\WHUT_freecars.o
+#        -o
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Exe\SeekFree_Kinetis.out
+#        --map
+#        E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\List\SeekFree_Kinetis.map
+#        --config E:\TX-1C\IAR\arm\CONFIG\generic_cortex.icf --semihosting
+#        --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__Heap_Handler  = NoFree
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The no free heap was selected because no calls to memory
+deallocation functions were found in the application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x00000000 { ro section .intvec };
+"P1":  place in [from 0x00000000 to 0x0007ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block PROC_STACK with size = 0M, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x20000000 to 0x2000ffff] {
+          rw, block CSTACK, block PROC_STACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A0":                                      0x410
+  .intvec            ro code  0x00000000   0x410  startup_MK60F15.o [1]
+                            - 0x00000410   0x410
+
+"P1":                                     0x6492
+  .text              ro code  0x00000410  0x1120  Attitude_Calculation.o [1]
+  .text              ro code  0x00001530    0x1e  sqrtf.o [4]
+  .text              ro code  0x0000154e    0x7a  lz77_init_single.o [5]
+  .text              ro code  0x000015c8    0x6a  atan2f.o [4]
+  .text              ro code  0x00001634    0x5c  asinf.o [4]
+  .text              ro code  0x00001690   0x1e0  cos_sin32.o [4]
+  .text              ro code  0x00001870    0x64  acosf.o [4]
+  .text              ro code  0x000018d4    0x48  FltToDbl.o [4]
+  .text              ro code  0x0000191c   0x1a2  DblMul.o [4]
+  .text              ro code  0x00001ac0    0x68  DblToFlt.o [4]
+  .text              ro code  0x00001b28    0xa6  ABImemcpy.o [5]
+  .text              ro code  0x00001bd0    0x2e  DblCmpLe.o [4]
+  Veneer             ro code  0x00001c00     0x8  - Linker created -
+  Veneer             ro code  0x00001c08     0x8  - Linker created -
+  Veneer             ro code  0x00001c10     0x8  - Linker created -
+  .text              ro code  0x00001c18   0x102  DataStore.o [1]
+  .text              ro code  0x00001d1a   0x132  BMX055.o [1]
+  .text              ro code  0x00001e4c   0x218  FXAS2100_FXOS8700.o [1]
+  .text              ro code  0x00002064   0x178  DblAdd.o [4]
+  .text              ro code  0x000021dc   0x246  DblDiv.o [4]
+  .text              ro code  0x00002424    0xa4  xatanf.o [4]
+  .text              ro code  0x000024c8     0xa  MK60_flash.o [1]
+  .text              ro code  0x000024d4    0x4c  common.o [1]
+  .text              ro code  0x00002520    0x50  MK60_systick.o [1]
+  .text              ro code  0x00002570   0x3f4  SoftIIC.o [1]
+  .text              ro code  0x00002964    0xd2  DblSub.o [4]
+  .text              ro code  0x00002a38   0x9d4  ctrl_pid.o [1]
+  .text              ro code  0x0000340c   0x138  ctrl_basic.o [1]
+  .text              ro code  0x00003544    0x2e  Find_path.o [1]
+  .text              ro code  0x00003574   0x102  sqrt.o [4]
+  .text              ro code  0x00003678   0x5fc  Pos_cal.o [1]
+  .text              ro code  0x00003c74    0x1a  U32ToDbl.o [4]
+  .text              ro code  0x00003c90   0x75c  VCAN_Track.o [1]
+  .text              ro code  0x000043ec    0x58  CtrDelay.o [1]
+  .text              ro code  0x00004444   0x1e8  Moto.o [1]
+  .text              ro code  0x0000462c    0x9c  CtrSpeed.o [1]
+  .text              ro code  0x000046c8   0x1dc  MK60_gpio.o [1]
+  .text              ro code  0x000048a4   0x4f8  MK60_ftm.o [1]
+  .text              ro code  0x00004d9c     0x8  abs.o [3]
+  .text              ro code  0x00004da4    0x88  MK60_port.o [1]
+  .text              ro code  0x00004e2c   0x2f0  WHUT_freecars.o [1]
+  .text              ro code  0x0000511c    0x3a  DblToS32.o [4]
+  .text              ro code  0x00005158   0x2d0  MK60_uart.o [1]
+  .text              ro code  0x00005428    0x22  S32ToDbl.o [4]
+  .text              ro code  0x0000544c   0x2b4  SEEKFREE_MT9V032.o [1]
+  .text              ro code  0x00005700   0x208  MK60_dma.o [1]
+  .text              ro code  0x00005908   0x21a  SEEKFREE_OLED.o [1]
+  .text              ro code  0x00005b24   0x1e0  VCAN_Servo.o [1]
+  .text              ro code  0x00005d04   0x1dc  IRQHandler.o [1]
+  .text              ro code  0x00005ee0    0x5c  Encoder.o [1]
+  .text              ro code  0x00005f3c   0x190  Communication.o [1]
+  .text              ro code  0x000060cc   0x100  main.o [1]
+  .text              ro code  0x000061cc    0xa0  Init.o [1]
+  .text              ro code  0x0000626c    0x68  MK60_pit.o [1]
+  .text              ro code  0x000062d4    0xfa  system_MK60.o [1]
+  .text              ro code  0x000063d0    0x64  isr.o [1]
+  .text              ro code  0x00006434    0x40  zero_init3.o [5]
+  .text              ro code  0x00006474    0x28  data_init.o [5]
+  .text              ro code  0x0000649c    0x22  fpinit_M.o [4]
+  .iar.init_table    const    0x000064c0    0x20  - Linker created -
+  .text              ro code  0x000064e0    0x1e  cmain.o [5]
+  .text              ro code  0x000064fe     0x4  low_level_init.o [3]
+  .text              ro code  0x00006502     0x4  exit.o [3]
+  .text              ro code  0x00006508     0xa  cexit.o [5]
+  .text              ro code  0x00006514    0x14  exit.o [6]
+  .rodata            const    0x00006528    0x18  MK60_gpio.o [1]
+  .rodata            const    0x00006540    0x18  MK60_gpio.o [1]
+  .rodata            const    0x00006558    0x18  MK60_port.o [1]
+  .rodata            const    0x00006570    0x18  MK60_port.o [1]
+  .rodata            const    0x00006588    0x10  MK60_ftm.o [1]
+  .text              ro code  0x00006598    0x10  startup_MK60F15.o [1]
+  .text              ro code  0x000065a8     0xc  cstartup_M.o [5]
+  .text              ro code  0x000065b4     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000065b8     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000065bc     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000065c0     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000065c4     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000065c8     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000065cc     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000065d0     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000065d4     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000065d8     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000065dc     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000065e0     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000065e4     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000065e8     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000065ec     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000065f0     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000065f4     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000065f8     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000065fc     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006600     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006604     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006608     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x0000660c     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006610     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006614     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006618     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x0000661c     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006620     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006624     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006628     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x0000662c     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006630     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006634     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006638     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x0000663c     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006640     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006644     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006648     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x0000664c     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006650     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006654     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006658     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x0000665c     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006660     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006664     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006668     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x0000666c     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006670     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006674     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006678     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x0000667c     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006680     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006684     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006688     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x0000668c     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006690     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006694     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006698     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x0000669c     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000066a0     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000066a4     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000066a8     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000066ac     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000066b0     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000066b4     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000066b8     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000066bc     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000066c0     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000066c4     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000066c8     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000066cc     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000066d0     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000066d4     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000066d8     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000066dc     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000066e0     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000066e4     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000066e8     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000066ec     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000066f0     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000066f4     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000066f8     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x000066fc     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006700     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006704     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006708     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x0000670c     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006710     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006714     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006718     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x0000671c     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006720     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006724     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006728     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x0000672c     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006730     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006734     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006738     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x0000673c     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006740     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006744     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006748     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x0000674c     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006750     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006754     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006758     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x0000675c     0x4  startup_MK60F15.o [1]
+  .text              ro code  0x00006760     0x4  startup_MK60F15.o [1]
+  .rodata            const    0x00006764     0x0  zero_init3.o [5]
+  .rodata            const    0x00006764     0x0  lz77_init_single.o [5]
+  Initializer bytes  const    0x00006764   0x13e  <for P2-1>
+                            - 0x000068a2  0x6492
+
+"P2", part 1 of 3:                         0x2a5
+  P2-1                        0x20000000   0x2a5  <Init block>
+    .data            inited   0x20000000   0x114  main.o [1]
+    .data            inited   0x20000114    0x18  MK60_uart.o [1]
+    .data            inited   0x2000012c    0x24  SEEKFREE_MT9V032.o [1]
+    .data            inited   0x20000150    0x20  SEEKFREE_MT9V032.o [1]
+    .data            inited   0x20000170     0x4  VCAN_Track.o [1]
+    .data            inited   0x20000174     0x4  VCAN_Track.o [1]
+    .textrw          inited   0x20000178   0x124  MK60_flash.o [1]
+    .data            inited   0x2000029c     0x2  VCAN_Servo.o [1]
+    .data            inited   0x2000029e     0x1  Attitude_Calculation.o [1]
+    .data            inited   0x2000029f     0x1  Communication.o [1]
+    .data            inited   0x200002a0     0x1  main.o [1]
+    .data            inited   0x200002a1     0x1  SEEKFREE_MT9V032.o [1]
+    .data            inited   0x200002a2     0x1  VCAN_Track.o [1]
+    .data            inited   0x200002a3     0x1  VCAN_Track.o [1]
+    .data            inited   0x200002a4     0x1  WHUT_freecars.o [1]
+                            - 0x200002a5   0x2a5
+
+"P2", part 2 of 3:                        0x3594
+  .bss               zero     0x200002a8  0x2000  SEEKFREE_MT9V032.o [1]
+  .bss               zero     0x200022a8   0xc80  DataStore.o [1]
+  .bss               zero     0x20002f28   0x5a0  ctrl_pid.o [1]
+  .bss               zero     0x200034c8    0x6c  WHUT_freecars.o [1]
+  .bss               zero     0x20003534    0x64  CtrSpeed.o [1]
+  .bss               zero     0x20003598    0x58  Find_path.o [1]
+  .bss               zero     0x200035f0    0x48  WHUT_freecars.o [1]
+  .bss               zero     0x20003638    0x24  Attitude_Calculation.o [1]
+  .bss               zero     0x2000365c    0x24  WHUT_freecars.o [1]
+  .bss               zero     0x20003680    0x18  VCAN_Servo.o [1]
+  .bss               zero     0x20003698    0x10  Attitude_Calculation.o [1]
+  .bss               zero     0x200036a8    0x10  Attitude_Calculation.o [1]
+  .bss               zero     0x200036b8    0x10  Attitude_Calculation.o [1]
+  .bss               zero     0x200036c8    0x10  Attitude_Calculation.o [1]
+  .bss               zero     0x200036d8    0x10  Attitude_Calculation.o [1]
+  .bss               zero     0x200036e8    0x10  Attitude_Calculation.o [1]
+  .bss               zero     0x200036f8     0xc  Attitude_Calculation.o [1]
+  .bss               zero     0x20003704     0xc  Attitude_Calculation.o [1]
+  .bss               zero     0x20003710     0xc  Attitude_Calculation.o [1]
+  .bss               zero     0x2000371c     0xc  Attitude_Calculation.o [1]
+  .bss               zero     0x20003728     0xc  Attitude_Calculation.o [1]
+  .bss               zero     0x20003734     0xc  Attitude_Calculation.o [1]
+  .bss               zero     0x20003740     0xc  Attitude_Calculation.o [1]
+  .bss               zero     0x2000374c     0xc  Attitude_Calculation.o [1]
+  .bss               zero     0x20003758     0xc  Attitude_Calculation.o [1]
+  .bss               zero     0x20003764     0xc  Find_path.o [1]
+  .bss               zero     0x20003770     0x8  Communication.o [1]
+  .bss               zero     0x20003778     0x8  ctrl_basic.o [1]
+  .bss               zero     0x20003780     0x8  Encoder.o [1]
+  .bss               zero     0x20003788     0x8  MK60_ftm.o [1]
+  .bss               zero     0x20003790     0x4  Attitude_Calculation.o [1]
+  .bss               zero     0x20003794     0x4  Attitude_Calculation.o [1]
+  .bss               zero     0x20003798     0x4  Attitude_Calculation.o [1]
+  .bss               zero     0x2000379c     0x4  Attitude_Calculation.o [1]
+  .bss               zero     0x200037a0     0x4  Attitude_Calculation.o [1]
+  .bss               zero     0x200037a4     0x4  Attitude_Calculation.o [1]
+  .bss               zero     0x200037a8     0x4  Attitude_Calculation.o [1]
+  .bss               zero     0x200037ac     0x4  Attitude_Calculation.o [1]
+  .bss               zero     0x200037b0     0x4  Attitude_Calculation.o [1]
+  .bss               zero     0x200037b4     0x4  Attitude_Calculation.o [1]
+  .bss               zero     0x200037b8     0x4  Attitude_Calculation.o [1]
+  .bss               zero     0x200037bc     0x4  common.o [1]
+  .bss               zero     0x200037c0     0x4  common.o [1]
+  .bss               zero     0x200037c4     0x4  ctrl_pid.o [1]
+  .bss               zero     0x200037c8     0x4  ctrl_pid.o [1]
+  .bss               zero     0x200037cc     0x4  ctrl_pid.o [1]
+  .bss               zero     0x200037d0     0x4  ctrl_pid.o [1]
+  .bss               zero     0x200037d4     0x4  ctrl_pid.o [1]
+  .bss               zero     0x200037d8     0x4  Find_path.o [1]
+  .bss               zero     0x200037dc     0x4  Pos_cal.o [1]
+  .bss               zero     0x200037e0     0x4  Pos_cal.o [1]
+  .bss               zero     0x200037e4     0x4  Pos_cal.o [1]
+  .bss               zero     0x200037e8     0x4  Pos_cal.o [1]
+  .bss               zero     0x200037ec     0x4  Pos_cal.o [1]
+  .bss               zero     0x200037f0     0x4  Pos_cal.o [1]
+  .bss               zero     0x200037f4     0x4  SEEKFREE_MT9V032.o [1]
+  .bss               zero     0x200037f8     0x4  VCAN_Track.o [1]
+  .bss               zero     0x200037fc     0x4  VCAN_Track.o [1]
+  .bss               zero     0x20003800     0x4  VCAN_Track.o [1]
+  .bss               zero     0x20003804     0x4  VCAN_Track.o [1]
+  .bss               zero     0x20003808     0x2  Attitude_Calculation.o [1]
+  .bss               zero     0x2000380a     0x2  ctrl_pid.o [1]
+  .bss               zero     0x2000380c     0x2  ctrl_pid.o [1]
+  .bss               zero     0x2000380e     0x2  IRQHandler.o [1]
+  .bss               zero     0x20003810     0x2  IRQHandler.o [1]
+  .bss               zero     0x20003812     0x2  IRQHandler.o [1]
+  .bss               zero     0x20003814     0x2  IRQHandler.o [1]
+  .bss               zero     0x20003816     0x2  IRQHandler.o [1]
+  .bss               zero     0x20003818     0x2  IRQHandler.o [1]
+  .bss               zero     0x2000381a     0x2  IRQHandler.o [1]
+  .bss               zero     0x2000381c     0x2  IRQHandler.o [1]
+  .bss               zero     0x2000381e     0x2  IRQHandler.o [1]
+  .bss               zero     0x20003820     0x2  IRQHandler.o [1]
+  .bss               zero     0x20003822     0x2  VCAN_Servo.o [1]
+  .bss               zero     0x20003824     0x2  VCAN_Track.o [1]
+  .bss               zero     0x20003826     0x1  Attitude_Calculation.o [1]
+  .bss               zero     0x20003827     0x1  Attitude_Calculation.o [1]
+  .bss               zero     0x20003828     0x1  Communication.o [1]
+  .bss               zero     0x20003829     0x1  Communication.o [1]
+  .bss               zero     0x2000382a     0x1  Communication.o [1]
+  .bss               zero     0x2000382b     0x1  Communication.o [1]
+  .bss               zero     0x2000382c     0x1  ctrl_pid.o [1]
+  .bss               zero     0x2000382d     0x1  duty.o [1]
+  .bss               zero     0x2000382e     0x1  main.o [1]
+  .bss               zero     0x2000382f     0x1  main.o [1]
+  .bss               zero     0x20003830     0x1  SEEKFREE_MT9V032.o [1]
+  .bss               zero     0x20003831     0x1  SEEKFREE_MT9V032.o [1]
+  .bss               zero     0x20003832     0x1  Switch.o [1]
+  .bss               zero     0x20003833     0x1  VCAN_Servo.o [1]
+  .bss               zero     0x20003834     0x1  VCAN_Track.o [1]
+  .bss               zero     0x20003835     0x1  VCAN_Track.o [1]
+  .bss               zero     0x20003836     0x1  VCAN_Track.o [1]
+  .bss               zero     0x20003837     0x1  VCAN_Track.o [1]
+  .bss               zero     0x20003838     0x1  VCAN_Track.o [1]
+  .bss               zero     0x20003839     0x1  VCAN_Track.o [1]
+  .bss               zero     0x2000383a     0x1  VCAN_Track.o [1]
+  .bss               zero     0x2000383b     0x1  VCAN_Track.o [1]
+                            - 0x2000383c  0x3594
+
+"P2", part 3 of 3:                         0x400
+  CSTACK                      0x20003840   0x400  <Block>
+    CSTACK           uninit   0x20003840   0x400  <Block tail>
+                            - 0x20003c40   0x400
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x3594:
+          0x200002a8  0x3594
+
+Copy/lz77 (__iar_lz77_init_single3)
+    1 source range, total size 0x13e (46% of destination):
+          0x00006764   0x13e
+    1 destination range, total size 0x2a5:
+          0x20000000   0x2a5
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  rw code  ro data  rw data
+    ------                  -------  -------  -------  -------
+E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj: [1]
+    Attitude_Calculation.o    4 384                 1      289
+    BMX055.o                    306
+    Communication.o             400                         13
+    CtrDelay.o                   88
+    CtrSpeed.o                  156                        100
+    DataStore.o                 258                      3 200
+    Encoder.o                    92                          8
+    FXAS2100_FXOS8700.o         536
+    Find_path.o                  46                        104
+    IRQHandler.o                476                         20
+    Init.o                      160
+    MK60_dma.o                  520
+    MK60_flash.o                 10      292      137
+    MK60_ftm.o                1 272                16        8
+    MK60_gpio.o                 476                48
+    MK60_pit.o                  104
+    MK60_port.o                 136                48
+    MK60_systick.o               80
+    MK60_uart.o                 720                11       24
+    Moto.o                      488
+    Pos_cal.o                 1 532                         24
+    SEEKFREE_MT9V032.o          692                32    8 267
+    SEEKFREE_OLED.o             538
+    SoftIIC.o                 1 012
+    Switch.o                                                 1
+    VCAN_Servo.o                480                 1       29
+    VCAN_Track.o              1 884                 5       36
+    WHUT_freecars.o             752                 1      217
+    common.o                     76                          8
+    ctrl_basic.o                312                          8
+    ctrl_pid.o                2 516                      1 465
+    duty.o                                                   1
+    isr.o                       100
+    main.o                      256               130      279
+    startup_MK60F15.o         1 488
+    system_MK60.o               250
+    ----------------------------------------------------------
+    Total:                   22 596      292      430   14 101
+
+command line: [2]
+    ----------------------------------------------------------
+    Total:
+
+dl7M_tlf.a: [3]
+    abs.o                         8
+    exit.o                        4
+    low_level_init.o              4
+    ----------------------------------------------------------
+    Total:                       16
+
+m7M_tls.a: [4]
+    DblAdd.o                    376
+    DblCmpLe.o                   46
+    DblDiv.o                    582
+    DblMul.o                    418
+    DblSub.o                    210
+    DblToFlt.o                  104
+    DblToS32.o                   58
+    FltToDbl.o                   72
+    S32ToDbl.o                   34
+    U32ToDbl.o                   26
+    acosf.o                     100
+    asinf.o                      92
+    atan2f.o                    106
+    cos_sin32.o                 480
+    fpinit_M.o                   34
+    sqrt.o                      258
+    sqrtf.o                      30
+    xatanf.o                    164
+    ----------------------------------------------------------
+    Total:                    3 190
+
+rt7M_tl.a: [5]
+    ABImemcpy.o                 166
+    cexit.o                      10
+    cmain.o                      30
+    cstartup_M.o                 12
+    data_init.o                  40
+    lz77_init_single.o          122
+    zero_init3.o                 64
+    ----------------------------------------------------------
+    Total:                      444
+
+shb_l.a: [6]
+    exit.o                       20
+    ----------------------------------------------------------
+    Total:                       20
+
+    Gaps                         32                 2
+    Linker created               24                32    1 024
+--------------------------------------------------------------
+    Grand Total:             26 322      292      464   15 125
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+.iar.init_table$$Base   0x000064c0           --   Gb  - Linker created -
+.iar.init_table$$Limit  0x000064e0           --   Gb  - Linker created -
+?main                   0x000064e1          Code  Gb  cmain.o [5]
+Abs                     0x0000342b    0x10  Code  Gb  ctrl_basic.o [1]
+Acc                     0x200036f8     0xc  Data  Gb  Attitude_Calculation.o [1]
+Angle_get               0x000010a1   0x3c8  Code  Gb  Attitude_Calculation.o [1]
+Angle_get::IsAttitudeinit
+                        0x20003827     0x1  Data  Lc  Attitude_Calculation.o [1]
+Angle_to_Ctro           0x200037c4     0x4  Data  Gb  ctrl_pid.o [1]
+Attitude_UpdateAcc      0x00000d0d   0x102  Code  Gb  Attitude_Calculation.o [1]
+Attitude_UpdateGyro     0x00000e15   0x194  Code  Gb  Attitude_Calculation.o [1]
+AxisAngle               0x200036a8    0x10  Data  Gb  Attitude_Calculation.o [1]
+BMX055_DataRead         0x00001d1b   0x132  Code  Gb  BMX055.o [1]
+CSTACK$$Base            0x20003840           --   Gb  - Linker created -
+CSTACK$$Limit           0x20003c40           --   Gb  - Linker created -
+CarEnterOk              0x20003836     0x1  Data  Gb  VCAN_Track.o [1]
+Car_Move                0x000045cb    0x58  Code  Gb  Moto.o [1]
+Connunication_init      0x00005f69    0x1c  Code  Gb  Communication.o [1]
+Constraint              0x0000343b    0x32  Code  Gb  ctrl_basic.o [1]
+Constraint_By_Abs       0x0000346d    0x20  Code  Gb  ctrl_basic.o [1]
+CtrRelay                0x00004403    0x42  Code  Gb  CtrDelay.o [1]
+DMA0_IRQHandler         0x000063eb    0x12  Code  Gb  isr.o [1]
+DataFilter              0x0000348d    0xae  Code  Gb  ctrl_basic.o [1]
+DataFilter::Sum         0x20003778     0x8  Data  Lc  ctrl_basic.o [1]
+DataLoad                0x00001ccf    0x30  Code  Gb  DataStore.o [1]
+DataSave                0x00001c97    0x38  Code  Gb  DataStore.o [1]
+Data_init               0x00001d09    0x12  Code  Gb  DataStore.o [1]
+DiagonalDis             0x200037f8     0x4  Data  Gb  VCAN_Track.o [1]
+Disable_Wdog            0x000062d5    0x18  Code  Gb  system_MK60.o [1]
+Dof_PID_Init_Similar_Parameter
+                        0x00002e91    0x80  Code  Lc  ctrl_pid.o [1]
+Dof_PID_Update_Calculate
+                        0x00002b6d    0x56  Code  Gb  ctrl_pid.o [1]
+En_Update_PID           0x2000382c     0x1  Data  Gb  ctrl_pid.o [1]
+Encoder_Init            0x00005ee1    0x10  Code  Gb  Encoder.o [1]
+ErrAxisAngle            0x200036e8    0x10  Data  Gb  Attitude_Calculation.o [1]
+ErrEulerAngle           0x20003734     0xc  Data  Gb  Attitude_Calculation.o [1]
+ErrQuaternion           0x200036d8    0x10  Data  Gb  Attitude_Calculation.o [1]
+EulerAngle              0x20003710     0xc  Data  Gb  Attitude_Calculation.o [1]
+EulerAngleRate          0x2000371c     0xc  Data  Gb  Attitude_Calculation.o [1]
+FLASH_CMD               0x20000179    0x10  Code  Gb  MK60_flash.o [1]
+FLASH_DATA              0x200022a8   0xc80  Data  Gb  DataStore.o [1]
+FLASH_DELAY             0x000024c9     0xa  Code  Gb  MK60_flash.o [1]
+FLASH_ERASE             0x200001a1    0x3a  Code  Gb  MK60_flash.o [1]
+FLASH_WRITE             0x200001db    0x88  Code  Gb  MK60_flash.o [1]
+FLASH_init              0x20000189    0x18  Code  Gb  MK60_flash.o [1]
+FTMX                    0x00006588    0x10  Data  Lc  MK60_ftm.o [1]
+FTM_port_mux            0x000048a5   0x1a2  Code  Gb  MK60_ftm.o [1]
+FXAS2100_FXOS8700_DataRead
+                        0x00001f33   0x132  Code  Gb  FXAS2100_FXOS8700.o [1]
+FXAS2100_FXOS8700_init  0x00001e4d    0xe6  Code  Gb  FXAS2100_FXOS8700.o [1]
+Fill_Mem                0x0000340d    0x1e  Code  Gb  ctrl_basic.o [1]
+Float2U32               0x000024fd    0x1e  Code  Gb  common.o [1]
+FreeCarsDataNum         0x200002a4     0x1  Data  Gb  WHUT_freecars.o [1]
+GET_CFG                 0x20000150    0x20  Data  Gb  SEEKFREE_MT9V032.o [1]
+GPIOX                   0x00006540    0x18  Data  Lc  MK60_gpio.o [1]
+GPIOX                   0x00006570    0x18  Data  Lc  MK60_port.o [1]
+GPIO_init               0x0000620f    0x2c  Code  Gb  Init.o [1]
+GetSpeedByDistance      0x0000462d    0x3c  Code  Gb  CtrSpeed.o [1]
+Gyro                    0x20003704     0xc  Data  Gb  Attitude_Calculation.o [1]
+GyroOffset              0x20003758     0xc  Data  Gb  Attitude_Calculation.o [1]
+GyroOffset_init         0x00000fb9    0xd0  Code  Gb  Attitude_Calculation.o [1]
+GyroOffset_init::Count  0x20003808     0x2  Data  Lc  Attitude_Calculation.o [1]
+IIC_DELAY               0x00002571    0x1e  Code  Lc  SoftIIC.o [1]
+IIC_Read_Buff           0x0000287b    0x96  Code  Gb  SoftIIC.o [1]
+IIC_Read_Reg            0x00002815    0x66  Code  Gb  SoftIIC.o [1]
+IIC_Write_Reg           0x000027c5    0x50  Code  Gb  SoftIIC.o [1]
+IIC_ack                 0x00002695    0x3e  Code  Lc  SoftIIC.o [1]
+IIC_init                0x00002911    0x3c  Code  Gb  SoftIIC.o [1]
+IIC_noack               0x000026d3    0x3e  Code  Lc  SoftIIC.o [1]
+IIC_readbyte            0x0000275b    0x6a  Code  Lc  SoftIIC.o [1]
+IIC_sendbyte            0x00002711    0x4a  Code  Lc  SoftIIC.o [1]
+IIC_start               0x0000258f    0x4c  Code  Lc  SoftIIC.o [1]
+IIC_stop                0x000025db    0x42  Code  Lc  SoftIIC.o [1]
+IIC_waitack             0x0000261d    0x78  Code  Lc  SoftIIC.o [1]
+ISR_init                0x0000623b    0x22  Code  Gb  Init.o [1]
+InitRelay               0x000043ed    0x16  Code  Gb  CtrDelay.o [1]
+InitServo               0x00005b25    0x52  Code  Gb  VCAN_Servo.o [1]
+InitSpeedWithDistance   0x00004669    0x54  Code  Gb  CtrSpeed.o [1]
+IsCarFindPoint          0x000040f9    0x8a  Code  Gb  VCAN_Track.o [1]
+IsCarFindPoint::flag    0x2000383a     0x1  Data  Lc  VCAN_Track.o [1]
+IsCarSetOK_Obstacle     0x00004183    0x8c  Code  Gb  VCAN_Track.o [1]
+IsCarSetOK_Obstacle::flag
+                        0x2000383b     0x1  Data  Lc  VCAN_Track.o [1]
+IsGyroOffsetReset       0x2000029e     0x1  Data  Gb  Attitude_Calculation.o [1]
+MOTOR_get               0x00005ef1    0x3e  Code  Gb  Encoder.o [1]
+MT9V032_CFG             0x2000012c    0x24  Data  Gb  SEEKFREE_MT9V032.o [1]
+MeaAxisAngle            0x200036c8    0x10  Data  Gb  Attitude_Calculation.o [1]
+MeaEulerAngle           0x20003728     0xc  Data  Gb  Attitude_Calculation.o [1]
+MeaQuaternion           0x200036b8    0x10  Data  Gb  Attitude_Calculation.o [1]
+Moto_Init               0x00004445    0x68  Code  Gb  Moto.o [1]
+Moto_Set_Pwm            0x000044d1    0xfa  Code  Gb  Moto.o [1]
+MotorStatus_t           0x20003780     0x8  Data  Gb  Encoder.o [1]
+My_FlashRead            0x00001c5b    0x3c  Code  Gb  DataStore.o [1]
+My_FlashWrite           0x00001c19    0x42  Code  Gb  DataStore.o [1]
+NMI_Handler             0x000063cd     0x2  Code  Gb  system_MK60.o [1]
+NVIC_DisableIRQ         0x00005465    0x18  Code  Lc  SEEKFREE_MT9V032.o [1]
+NVIC_EnableIRQ          0x000061cd    0x16  Code  Lc  Init.o [1]
+NVIC_EnableIRQ          0x00005159    0x18  Code  Lc  MK60_uart.o [1]
+NVIC_EnableIRQ          0x0000544d    0x18  Code  Lc  SEEKFREE_MT9V032.o [1]
+NVIC_EnableIRQ          0x00004e2d    0x18  Code  Lc  WHUT_freecars.o [1]
+NVIC_SetPriority        0x00005f3d    0x2c  Code  Lc  Communication.o [1]
+NVIC_SetPriority        0x000061e3    0x2c  Code  Lc  Init.o [1]
+NVIC_SetPriority        0x0000547d    0x30  Code  Lc  SEEKFREE_MT9V032.o [1]
+NVIC_SetPriority        0x00004e45    0x30  Code  Lc  WHUT_freecars.o [1]
+OLED_CLS                0x00005ae5    0x3e  Code  Gb  SEEKFREE_OLED.o [1]
+OLED_DLY_ms             0x00005909    0x1e  Code  Gb  SEEKFREE_OLED.o [1]
+OLED_Set_Pos            0x00005abb    0x2a  Code  Gb  SEEKFREE_OLED.o [1]
+OLED_WrCmd              0x00005a6d    0x4e  Code  Gb  SEEKFREE_OLED.o [1]
+OLED_WrDat              0x00005a1d    0x4e  Code  Gb  SEEKFREE_OLED.o [1]
+Out_Of_Board            0x00004219   0x14a  Code  Gb  VCAN_Track.o [1]
+Out_Of_Board::delay_cnt
+                        0x20003824     0x2  Data  Lc  VCAN_Track.o [1]
+PID_Parameter_Init      0x00002c61   0x216  Code  Gb  ctrl_pid.o [1]
+PID_Update_Error        0x00002ab9    0xb4  Code  Gb  ctrl_pid.o [1]
+PID_Update_Out          0x00002bc5    0x9c  Code  Gb  ctrl_pid.o [1]
+PID_Update_Sample       0x00002a39    0x80  Code  Gb  ctrl_pid.o [1]
+PIT0_IRQHandler         0x00005d05   0x144  Code  Gb  IRQHandler.o [1]
+PIT0_IRQHandler::cnt_1000ms
+                        0x20003820     0x2  Data  Lc  IRQHandler.o [1]
+PIT0_IRQHandler::cnt_10ms
+                        0x20003816     0x2  Data  Lc  IRQHandler.o [1]
+PIT0_IRQHandler::cnt_15ms
+                        0x20003818     0x2  Data  Lc  IRQHandler.o [1]
+PIT0_IRQHandler::cnt_1ms
+                        0x2000380e     0x2  Data  Lc  IRQHandler.o [1]
+PIT0_IRQHandler::cnt_20ms
+                        0x2000381c     0x2  Data  Lc  IRQHandler.o [1]
+PIT0_IRQHandler::cnt_2ms
+                        0x20003810     0x2  Data  Lc  IRQHandler.o [1]
+PIT0_IRQHandler::cnt_3ms
+                        0x20003812     0x2  Data  Lc  IRQHandler.o [1]
+PIT0_IRQHandler::cnt_50ms
+                        0x2000381a     0x2  Data  Lc  IRQHandler.o [1]
+PIT0_IRQHandler::cnt_5ms
+                        0x20003814     0x2  Data  Lc  IRQHandler.o [1]
+PIT0_IRQHandler::cnt_xxms
+                        0x2000381e     0x2  Data  Lc  IRQHandler.o [1]
+PORTA_IRQHandler        0x000063d1     0xa  Code  Gb  isr.o [1]
+PORTC_IRQHandler        0x000063db    0x10  Code  Gb  isr.o [1]
+PORTX                   0x00006528    0x18  Data  Lc  MK60_gpio.o [1]
+PORTX                   0x00006558    0x18  Data  Lc  MK60_port.o [1]
+POS_actual_value        0x200037e4     0x4  Data  Gb  Pos_cal.o [1]
+POS_set_value           0x200037e8     0x4  Data  Gb  Pos_cal.o [1]
+Pos_cal                 0x00003679   0x428  Code  Gb  Pos_cal.o [1]
+Pos_clear               0x00003c11    0x1a  Code  Gb  Pos_cal.o [1]
+Pos_get                 0x00003aa1   0x170  Code  Gb  Pos_cal.o [1]
+Quaternion              0x20003698    0x10  Data  Gb  Attitude_Calculation.o [1]
+QuaternionFromAcc       0x000009a9   0x2bc  Code  Gb  Attitude_Calculation.o [1]
+Quaternion_FromAxisAngle
+                        0x000007bf    0x76  Code  Gb  Attitude_Calculation.o [1]
+Quaternion_FromEulerAngle
+                        0x000006b9    0xd4  Code  Gb  Attitude_Calculation.o [1]
+Quaternion_Invert       0x000004c3    0x2a  Code  Gb  Attitude_Calculation.o [1]
+Quaternion_Multi        0x000004ed    0xd2  Code  Gb  Attitude_Calculation.o [1]
+Quaternion_Normalize    0x00000411    0xb2  Code  Gb  Attitude_Calculation.o [1]
+Quaternion_ToAxisAngle  0x0000078d    0x32  Code  Gb  Attitude_Calculation.o [1]
+Quaternion_ToEulerAngle
+                        0x000005c1    0xee  Code  Gb  Attitude_Calculation.o [1]
+Quaternion_UpdateFromGyro
+                        0x00000835   0x16c  Code  Gb  Attitude_Calculation.o [1]
+Quaternion_init         0x00000c69    0xa2  Code  Gb  Attitude_Calculation.o [1]
+Region$$Table$$Base     0x000064c0           --   Gb  - Linker created -
+Region$$Table$$Limit    0x000064e0           --   Gb  - Linker created -
+SYSTEM_CLK              0x00006303    0x7c  Code  Gb  system_MK60.o [1]
+S_s                     0x20000000   0x114  Data  Gb  main.o [1]
+SendBeforeOrAfter       0x000040d5    0x24  Code  Gb  VCAN_Track.o [1]
+SerialPortRx            0x200034c8    0x6c  Data  Gb  WHUT_freecars.o [1]
+ServoState              0x2000029c     0x2  Data  Gb  VCAN_Servo.o [1]
+Servo_StateCtr          0x00005bcf   0x128  Code  Gb  VCAN_Servo.o [1]
+Servo_StateCtr::up_cnt  0x20003822     0x2  Data  Lc  VCAN_Servo.o [1]
+SetServoDuty            0x00005b77    0x58  Code  Gb  VCAN_Servo.o [1]
+SevoCtlParam            0x20003680    0x18  Data  Gb  VCAN_Servo.o [1]
+SpdAct                  0x20003835     0x1  Data  Gb  VCAN_Track.o [1]
+SpeedBuff               0x20003534    0x64  Data  Gb  CtrSpeed.o [1]
+Speed_ResolveXY         0x00004049    0x8c  Code  Gb  VCAN_Track.o [1]
+Speed_Value_LB          0x200037d4     0x4  Data  Gb  ctrl_pid.o [1]
+Speed_Value_LH          0x200037c8     0x4  Data  Gb  ctrl_pid.o [1]
+Speed_Value_RB          0x200037d0     0x4  Data  Gb  ctrl_pid.o [1]
+Speed_Value_RH          0x200037cc     0x4  Data  Gb  ctrl_pid.o [1]
+Start                   0x0000637f    0x20  Code  Gb  system_MK60.o [1]
+StopAll                 0x000044ad    0x24  Code  Gb  Moto.o [1]
+SwitchMode              0x20003832     0x1  Data  Gb  Switch.o [1]
+SysCtrl_Angle_PID       0x00003209    0x5a  Code  Gb  ctrl_pid.o [1]
+SysCtrl_Speed_PID       0x000030b5   0x154  Code  Gb  ctrl_pid.o [1]
+SysCtrl_Speed_PID_Update
+                        0x000033ab    0x28  Code  Gb  ctrl_pid.o [1]
+SysPID                  0x20002f28   0x5a0  Data  Gb  ctrl_pid.o [1]
+SystemAttitude          0x20003740     0xc  Data  Gb  Attitude_Calculation.o [1]
+SystemAttitudeRate      0x2000374c     0xc  Data  Gb  Attitude_Calculation.o [1]
+TimeChangeFreq          0x00005e49    0x40  Code  Gb  IRQHandler.o [1]
+Track_EightQueen        0x00003c91   0x1aa  Code  Gb  VCAN_Track.o [1]
+Track_PlaceObstacle     0x00003e41   0x208  Code  Gb  VCAN_Track.o [1]
+Track_PlaceObstacle::cb_cnt
+                        0x20003839     0x1  Data  Lc  VCAN_Track.o [1]
+Track_PlaceObstacle::cb_step
+                        0x20003838     0x1  Data  Lc  VCAN_Track.o [1]
+TransferToNum           0x00003545    0x10  Code  Gb  Find_path.o [1]
+TransferToXY_One        0x00003555    0x1e  Code  Gb  Find_path.o [1]
+U322Float               0x0000251b     0x6  Code  Gb  common.o [1]
+UART1_RX_TX_IRQHandler  0x000063fd    0x12  Code  Gb  isr.o [1]
+UART2_RX_ISR            0x00005f85   0x11c  Code  Gb  Communication.o [1]
+UART2_RX_ISR::Temp      0x20003770     0x8  Data  Lc  Communication.o [1]
+UART2_RX_ISR::_data_cnt
+                        0x2000382b     0x1  Data  Lc  Communication.o [1]
+UART2_RX_ISR::_data_len
+                        0x2000029f     0x1  Data  Lc  Communication.o [1]
+UART2_RX_ISR::state     0x2000382a     0x1  Data  Lc  Communication.o [1]
+UART2_RX_TX_IRQHandler  0x0000640f    0x12  Code  Gb  isr.o [1]
+UART4_RX_TX_IRQHandler  0x00004f39   0x1a4  Code  Gb  WHUT_freecars.o [1]
+UartCmd                 0x00004e8b    0x1e  Code  Gb  WHUT_freecars.o [1]
+UartData                0x200035f0    0x48  Data  Gb  WHUT_freecars.o [1]
+UartDebug               0x00004e75    0x16  Code  Gb  WHUT_freecars.o [1]
+UpdataPidIcerment       0x00003263   0x148  Code  Gb  ctrl_pid.o [1]
+VSYNC                   0x00005699    0x18  Code  Gb  SEEKFREE_MT9V032.o [1]
+WALK_SPEED              0x20000170     0x4  Data  Gb  VCAN_Track.o [1]
+WALK_SPEED_SET          0x20000174     0x4  Data  Gb  VCAN_Track.o [1]
+Walk_Ctrl               0x20003598    0x58  Data  Gb  Find_path.o [1]
+WangToNum               0x20003804     0x4  Data  Gb  VCAN_Track.o [1]
+XD                      0x20003798     0x4  Data  Gb  Attitude_Calculation.o [1]
+XE                      0x20003794     0x4  Data  Gb  Attitude_Calculation.o [1]
+XN                      0x20003790     0x4  Data  Gb  Attitude_Calculation.o [1]
+X_Speed                 0x2000380c     0x2  Data  Gb  ctrl_pid.o [1]
+YD                      0x200037a4     0x4  Data  Gb  Attitude_Calculation.o [1]
+YE                      0x200037a0     0x4  Data  Gb  Attitude_Calculation.o [1]
+YN                      0x2000379c     0x4  Data  Gb  Attitude_Calculation.o [1]
+Y_Speed                 0x2000380a     0x2  Data  Gb  ctrl_pid.o [1]
+ZD                      0x200037b0     0x4  Data  Gb  Attitude_Calculation.o [1]
+ZE                      0x200037ac     0x4  Data  Gb  Attitude_Calculation.o [1]
+ZN                      0x200037a8     0x4  Data  Gb  Attitude_Calculation.o [1]
+__Vectors               0x00000000           --   Gb  startup_MK60F15.o [1]
+__Vectors_End           0x00000400          Data  Gb  startup_MK60F15.o [1]
+__Vectors_Size {Abs}    0x00000400           --   Gb  startup_MK60F15.o [1]
+__aeabi_cdcmple         0x00001bd1          Code  Gb  DblCmpLe.o [4]
+__aeabi_d2f             0x00001ac1          Code  Gb  DblToFlt.o [4]
+__aeabi_d2iz            0x0000511d          Code  Gb  DblToS32.o [4]
+__aeabi_dadd            0x00002065          Code  Gb  DblAdd.o [4]
+__aeabi_ddiv            0x000021dd          Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x0000191d          Code  Gb  DblMul.o [4]
+__aeabi_f2d             0x000018d5          Code  Gb  FltToDbl.o [4]
+__aeabi_i2d             0x00005429          Code  Gb  S32ToDbl.o [4]
+__aeabi_memcpy          0x00001b29          Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy4         0x00001b49          Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy8         0x00001b49          Code  Gb  ABImemcpy.o [5]
+__aeabi_ui2d            0x00003c75          Code  Gb  U32ToDbl.o [4]
+__cmain                 0x000064e1          Code  Gb  cmain.o [5]
+__exit                  0x00006515    0x14  Code  Gb  exit.o [6]
+__iar_Sin32             0x00001691   0x198  Code  Lc  cos_sin32.o [4]
+__iar_acos32            0x00001871          Code  Gb  acosf.o [4]
+__iar_asin32            0x00001635          Code  Gb  asinf.o [4]
+__iar_atan2_32          0x000015c9          Code  Gb  atan2f.o [4]
+__iar_cos32             0x00001869     0x4  Code  Gb  cos_sin32.o [4]
+__iar_cos_medium32      0x00001869     0x4  Code  Gb  cos_sin32.o [4]
+__iar_cos_mediumf       0x00001869     0x4  Code  Gb  cos_sin32.o [4]
+__iar_dadd              0x00002965          Code  Gb  DblSub.o [4]
+__iar_data_init3        0x00006475    0x28  Code  Gb  data_init.o [5]
+__iar_dsub              0x00002075          Code  Gb  DblAdd.o [4]
+__iar_dsubStart         0x00002087          Code  Gb  DblAdd.o [4]
+__iar_init_vfp          0x0000649d          Code  Gb  fpinit_M.o [4]
+__iar_lz77_init_single3
+                        0x0000154f    0x7a  Code  Gb  lz77_init_single.o [5]
+__iar_program_start     0x000065a9          Code  Gb  cstartup_M.o [5]
+__iar_sin32             0x0000186d     0x4  Code  Gb  cos_sin32.o [4]
+__iar_sin_medium32      0x0000186d     0x4  Code  Gb  cos_sin32.o [4]
+__iar_sin_mediumf       0x0000186d     0x4  Code  Gb  cos_sin32.o [4]
+__iar_sqrt32            0x00001531          Code  Gb  sqrtf.o [4]
+__iar_sqrt64            0x00003585          Code  Gb  sqrt.o [4]
+__iar_systems$$module {Abs}
+                        0x00000001          Data  Gb  command line/config [2]
+__iar_vfp___iar_sqrt64  0x00003575          Code  Gb  sqrt.o [4]
+__iar_vfp_sqrt          0x00003575          Code  Gb  sqrt.o [4]
+__iar_vfp_sqrtl         0x00003575          Code  Gb  sqrt.o [4]
+__iar_xatanf            0x00002425          Code  Gb  xatanf.o [4]
+__iar_zero_init3        0x00006435    0x40  Code  Gb  zero_init3.o [5]
+__low_level_init        0x000064ff     0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x00000000          Data  Gb  startup_MK60F15.o [1]
+_call_main              0x000064ed          Code  Gb  cmain.o [5]
+_exit                   0x00006509          Code  Gb  cexit.o [5]
+_main                   0x000064fb          Code  Gb  cmain.o [5]
+a_angle                 0x200037b4     0x4  Data  Gb  Attitude_Calculation.o [1]
+abs                     0x00004d9d     0x8  Code  Gb  abs.o [3]
+acosf                   0x00001871          Code  Gb  acosf.o [4]
+asinf                   0x00001635          Code  Gb  asinf.o [4]
+atan2f                  0x000015c9          Code  Gb  atan2f.o [4]
+bus_clk_mhz             0x200037c0     0x4  Data  Gb  common.o [1]
+cal_n                   0x20003834     0x1  Data  Gb  VCAN_Track.o [1]
+cal_n_serch             0x2000382f     0x1  Data  Gb  main.o [1]
+camera_init             0x000055ab    0xee  Code  Gb  SEEKFREE_MT9V032.o [1]
+car_angle               0x200037b8     0x4  Data  Gb  Attitude_Calculation.o [1]
+car_move_state          0x2000382d     0x1  Data  Gb  duty.o [1]
+core_clk_mhz            0x200037bc     0x4  Data  Gb  common.o [1]
+cosf                    0x00001869     0x4  Code  Gb  cos_sin32.o [4]
+dis_k1                  0x200037ec     0x4  Data  Gb  Pos_cal.o [1]
+dis_k2                  0x200037f0     0x4  Data  Gb  Pos_cal.o [1]
+div_set                 0x000062ed    0x16  Code  Gb  system_MK60.o [1]
+dma_portx2buff_init     0x00005701   0x208  Code  Gb  MK60_dma.o [1]
+dma_repeat              0x000054ad    0x56  Code  Lc  SEEKFREE_MT9V032.o [1]
+exit                    0x00006503     0x4  Code  Gb  exit.o [3]
+forward_back            0x200037dc     0x4  Data  Gb  Pos_cal.o [1]
+freecars_init           0x000050dd    0x1c  Code  Gb  WHUT_freecars.o [1]
+ftm_pwm_duty            0x00004be1    0x9e  Code  Gb  MK60_ftm.o [1]
+ftm_pwm_init            0x00004a47   0x19a  Code  Gb  MK60_ftm.o [1]
+ftm_quad_clean          0x00004d71    0x10  Code  Gb  MK60_ftm.o [1]
+ftm_quad_get            0x00004d63     0xe  Code  Gb  MK60_ftm.o [1]
+ftm_quad_init           0x00004c7f    0xe4  Code  Gb  MK60_ftm.o [1]
+get_clk                 0x000024d5    0x1c  Code  Gb  common.o [1]
+get_config              0x00005543    0x68  Code  Gb  SEEKFREE_MT9V032.o [1]
+gpio_get                0x000047f9    0x32  Code  Gb  MK60_gpio.o [1]
+gpio_init               0x000046c9   0x130  Code  Gb  MK60_gpio.o [1]
+gpio_set                0x0000482b    0x6c  Code  Gb  MK60_gpio.o [1]
+image                   0x200002a8  0x2000  Data  Gb  SEEKFREE_MT9V032.o [1]
+initOLED                0x00005927    0xf6  Code  Gb  SEEKFREE_OLED.o [1]
+left_right              0x200037e0     0x4  Data  Gb  Pos_cal.o [1]
+main                    0x000060cd   0x100  Code  Gb  main.o [1]
+mt9v032_cof_uart_interrupt
+                        0x00005503    0x40  Code  Gb  SEEKFREE_MT9V032.o [1]
+mt9v032_finish_flag     0x20003831     0x1  Data  Gb  SEEKFREE_MT9V032.o [1]
+now_position            0x20003764     0xc  Data  Gb  Find_path.o [1]
+optimal_n               0x200037d8     0x4  Data  Gb  Find_path.o [1]
+period                  0x20003788     0x8  Data  Gb  MK60_ftm.o [1]
+pit_init                0x0000626d    0x5c  Code  Gb  MK60_pit.o [1]
+port_init               0x00004da5    0x7a  Code  Gb  MK60_port.o [1]
+position_pid            0x00002f19   0x19a  Code  Gb  ctrl_pid.o [1]
+push                    0x00004f03    0x36  Code  Gb  WHUT_freecars.o [1]
+receive                 0x200037f4     0x4  Data  Gb  SEEKFREE_MT9V032.o [1]
+receive_num             0x20003830     0x1  Data  Gb  SEEKFREE_MT9V032.o [1]
+remain_x                0x20003828     0x1  Data  Gb  Communication.o [1]
+remain_y                0x20003829     0x1  Data  Gb  Communication.o [1]
+row_finished            0x000056b1     0x8  Code  Gb  SEEKFREE_MT9V032.o [1]
+send_flag               0x200002a3     0x1  Data  Gb  VCAN_Track.o [1]
+sensor                  0x20003826     0x1  Data  Gb  Attitude_Calculation.o [1]
+sensor_data             0x20003638    0x24  Data  Gb  Attitude_Calculation.o [1]
+serch_step              0x200002a0     0x1  Data  Gb  main.o [1]
+sinf                    0x0000186d     0x4  Code  Gb  cos_sin32.o [4]
+speed_mode              0x2000382e     0x1  Data  Gb  main.o [1]
+sqrt                    0x00003585          Code  Gb  sqrt.o [4]
+sqrtf                   0x00001531          Code  Gb  sqrtf.o [4]
+sqrtl                   0x00003585          Code  Gb  sqrt.o [4]
+systick_delay           0x00002521    0x20  Code  Gb  MK60_systick.o [1]
+systick_delay_ms        0x00002541    0x1e  Code  Gb  MK60_systick.o [1]
+tofreecars              0x00004ea9    0x5a  Code  Gb  WHUT_freecars.o [1]
+uSendBuf                0x2000365c    0x24  Data  Gb  WHUT_freecars.o [1]
+uart                    0x20000114    0x18  Data  Gb  MK60_uart.o [1]
+uart_getchar            0x000053bf    0x1e  Code  Gb  MK60_uart.o [1]
+uart_init               0x00005171   0x212  Code  Gb  MK60_uart.o [1]
+uart_putbuff            0x0000539f    0x20  Code  Gb  MK60_uart.o [1]
+uart_putchar            0x00005383    0x1c  Code  Gb  MK60_uart.o [1]
+uart_receive_flag       0x200002a1     0x1  Data  Gb  SEEKFREE_MT9V032.o [1]
+uart_rx_irq_en          0x000053dd    0x2e  Code  Gb  MK60_uart.o [1]
+ucn                     0x20003837     0x1  Data  Gb  VCAN_Track.o [1]
+updown_step             0x200002a2     0x1  Data  Gb  VCAN_Track.o [1]
+userNow                 0x20003833     0x1  Data  Gb  VCAN_Servo.o [1]
+x_error                 0x200037fc     0x4  Data  Gb  VCAN_Track.o [1]
+y_error                 0x20003800     0x4  Data  Gb  VCAN_Track.o [1]
+
+
+[1] = E:\桌面MOVE\学习项目\比赛\创意组日常记录\控制部分\步步为营_主核\Projecct\IAR\program\MK60FX_Debug\Obj
+[2] = command line
+[3] = dl7M_tlf.a
+[4] = m7M_tls.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  26 322 bytes of readonly  code memory
+     292 bytes of readwrite code memory
+     464 bytes of readonly  data memory
+  15 125 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

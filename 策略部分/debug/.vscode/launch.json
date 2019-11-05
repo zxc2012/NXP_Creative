@@ -1,0 +1,57 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - communication",
+            "request": "launch",
+            "mainClass": "quoridor.communication",
+            "projectName": "COMP2911 - Project"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ConsoleGame<COMP2911 - Project>",
+            "request": "launch",
+            "mainClass": "quoridor.ConsoleGame",
+            "projectName": "COMP2911 - Project"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Quoridor<COMP2911 - Project>",
+            "request": "launch",
+            "mainClass": "quoridor.Quoridor",
+            "projectName": "COMP2911 - Project"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BoardGraphTest<COMP2911 - Project>",
+            "request": "launch",
+            "mainClass": "quoridor.test.BoardGraphTest",
+            "projectName": "COMP2911 - Project"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BoardPrinterTest<COMP2911 - Project>",
+            "request": "launch",
+            "mainClass": "quoridor.test.BoardPrinterTest",
+            "projectName": "COMP2911 - Project"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GraphFillTest<COMP2911 - Project>",
+            "request": "launch",
+            "mainClass": "quoridor.test.GraphFillTest",
+            "projectName": "COMP2911 - Project"
+        }
+    ]
+}

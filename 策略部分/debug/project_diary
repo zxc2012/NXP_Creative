@@ -1,0 +1,228 @@
+ELYSE WISE z3308940						   		PROJECT DIARY								COMP2911
+----------------------------------------------------------------------------------------------------------------
+Tut/Lab 07										Mon 18/04/11
+
+Overview:
+Project was released
+Formed a Project group with Nathan and Eddie
+Discussed basic rules of gameplay in tutorial
+Drew up a list of roles for project 
+Sketched a rough timetable for project work
+Continued discussion of design ideas
+
+Points of Discussion:
+Today was our first introduction to the project. After organizing roles within the group and sketching a rough timetable, we used the remaining lab time to discuss our initial design approaches and ideas. The following points were decided upon:
+The program definitely needs a player class, a board class, a wall class and a space class (a space being a coordinate on a board)
+The board should be printed by iteratively concatenating strings. And should look something like this:
+	.........................................
+	:...:...:...:...:...:...:...:...:...:...:  etc.
+
+We can model a wall object's position by relating it to a space. By convention, we chose to relate each wall to the space whose top-left-hand corner holds the beginning of the wall.
+We are going to set up an online repository using Github in order to provide access to project for all group members, and allow them to add/modify code and share the changes instantly.
+
+To Do List:
+Implement a board printing function
+Set up eGit and Github, and create group repo
+Work on class structure for preliminary design
+Practise playing Quoridor
+
+Next Meeting: (during break) Friday 22/04/11 12pm 
+
+---------------------------------------------------------------------------------------------------------------
+
+Mid-Semester Break Meeting 1						Fri 29/04/11
+
+Overview:
+Merged and Critiqued our board printing code
+Finalised preliminary design work
+Finalised preliminary class structure 
+
+Points of Discussion:
+We held a lengthy discussion on generating valid board moves, and eventually finalised our submission of 'what constitutes a valid move' for the preliminary design. We also took a look at Nathan's code for printing a board and compared it with my own. We decided on the final 'look' that we wanted the board to have (down to the very last ascii character) and Nathan took it upon himself to modify the code to produce this. We then spent the rest of the meeting generating a class structure for our preliminary design, and produced a simple game simulation program which takes two players, prints their coordinates and allows them to move left, right,up and down on the board.
+I then distributed the final documentation work for the preliminary design submission amongst the team.
+
+To Do List:
+(Nathan) Modify board printing code to print our decided aesthetic design, and print walls
+(Eddie) Write UML diagram for preliminary design
+(Elyse) Write CRC cards for preliminary design, and submit final design
+
+Next Meeting: Lab 8 
+
+---------------------------------------------------------------------------------------------------------------
+
+Lab 8												Mon 02/05/11
+
+Overview:
+Completed Lab 8 work
+Submitted Preliminary Design
+Changed wall class representation
+Decided on user input syntax 
+
+Points of Discussion:
+Over the course of the week, we had (using guthub to store our project) collaboratively worked on our code and had achieved 
+a working project which allowed players to enter their names, tokens and play a two-player game using the console to enter 
+moves.
+In order to stick with the traditional game rules, I modified our program so that a player enters a move by typing the 
+coordinates of the space they wish to move to (e.g. “e6”), rather than entering the direction (left, right etc.). This 
+allowed us to finish lab 8 very quickly – I simply added a string tokenizer to separate moves and then called the playturn()
+ for each move. I modified the board class to keep track of a current player, and to alternate the current player after 
+each turn is completed.
+Eddie fixed a huge problem we had with our wall representation – we were finding it impossible to neatly print our board 
+with our walls being represented to the space whose left had corner holds the start of the wall. Eddie modified the class 
+to represent a wall by keeping track of the space whose bottom right hand corner relates to the center of the wall – and 
+our print function was greatly simplified. Nate's board printing code worked beautifully once the change was implemented.
+
+
+To Do List:
+(Everyone) Merge any unpushed code on Github so we have one copy of our project.
+(Eddie) Research and work on path searching algorithms
+(Elyse) Work on 'cleaning up' class implementations and continue to implement code. Add further UI commands.
+(Nate) work on simple validation functions for user input (particularly valid moves)
+
+Next Meeting: Lab 9 
+
+______________________________________________________________________________________________________
+
+Lab 9
+
+Overview:
+Attempted lab 9 work
+lots of code restructuring
+Plenty of debates over finalisation of classes/interfaces
+
+Points of discussion:
+This week's lab was really frustrating - the validator class was so simple and we knew how we should go about implementing
+it straight away. I soon found the major problem -> We had gotten so far ahead of ourselves that our program really only
+played from the console (i.e. by printing and reading to/from std output -- my bad!). We had all the code sitting there for move
+validation - coded weeks earlier and thoroughly tested - but we couldn't build and run a 'board' without first entering
+players names etc.
+So our work this week focused on restructuring our design to handle two methods of game play -> through the validator, and 
+through the console. We had a few meetings to discuss which particular game / board methods had to allow for the possibility of input
+coming from the validator rather than the console, and we did our best to condense this condition to one overall handler method.
+We're still getting there. I spent most of the day drawing diagrams to explain the control flow of the program, and brainstorming with
+the boys on how to clean everything up.
+
+To Do List:
+Eddie - draw up final class diagram on Friday night (to give us time to restructure code as we want)
+Nate  - attempt to get validator up and running 
+Elyse - organise submission for revised design
+Everyone - Play with as many possibly class designs as we want - share the ideas and debate with each other on what works 
+best.
+
+________________________________________________________________________________________________________
+
+Meeting: Fri Week 10             2pm Library
+
+Overview:
+Decided on revised class structure
+Decided on how we were going to implement validator class (and future tests)
+Looked into the possibility of loading/saving
+
+Points of Discussion:
+This meeting was used to finalise our decisions for the revised design - something which we decided to leave
+til last minute because we wanted to get it right - and needed as much time as possible to toy with possibilities
+of implementing tests, undo/redo functions, getting our players to choose moves and being able to play everything
+from the console if we chose this method of gameplay.
+We spent the hour drawing our favourite ideas on the whiteboard and making sure everybody was up to speed on the 
+major problems we were facing. My point of debate was: - we needed to come up with two methods of validation - one which 
+checked for basic human error (i.e. trying to enter 'rr' as a move) and another which checked whether the move could be 
+valid for this particular board. We all agreed that this was defintitely the way to structure our validation methods 
+because it enabled us to pick and choose the sequence of validation for input that was coming from a certain source.
+In other words, we could omit an error checking for human error on an AI player.).
+We then worked on moving our methods into their appropriate classes - and if necessary redesigning the interfaces to suit 
+this new plan of action. It turned out to be incredibly easy - and we suddenly had a board class which could check for 
+valid moves at all different levels - we had arrived at the structure that we needed in order to get our validator
+class up and running.
+
+To Do List:
+Same as last entry +
+Elyse - Design revised interfaces
+Eddie - add any missing implementation for entering, playing and validating moves (particularly jump cases).
+Nate - Get validator working correctly and implement it so we can run any future tests through this class.
+_______________________________________________________________________________________________________
+
+Weekend Work / (Lab 10)                  (20-22 May)
+
+We have finally got a factory class implemented (and running really nicely) - I managed to implement a makeBoard() factory method
+which handled the construction of the board and the two players to suit the 'type' of game being played. (i.e. validator game, human vs. human, human vs. AI..).
+
+ - This means that we can 'start' the quoridor game under any circumstance (validator, unit testing, console..),
+call the factory method makeBoard() and call playGame() to get it running. Go dynamic binding!
+
+Finally everything is falling into place.
+Nate and I spent most of the weekend trying to implement the save/load methods. We were torn between two ways to save
+a game: 
+1) To make a board object serializable
+    -pros:  really easy to write the code to write and read from a file (Java does it for you)
+    -cons:  In order to save a serializable object, every one of its fields also has to be serializable. (i.e. players,
+            spaces etc.)  -> we have to go through almost every class and make it serializable AND generate a UID
+            for it. Although this isn't hard, its a drawback to give all our future class designs this requirement.
+2) To translate a board into a string, save the string as a text file and then read it back again to load board.
+    -pros: We know what we're doing with this - and we don't have to modify all our classes in order to implement it
+    	   We could pass the movesList into the file (as one string), and use the validator class to reload the original board state by 
+    	   'playing' these moves over again. This would also be useful because it would leave the doors open for an 'equals' method for boards which
+    	   could help us make some really powerful tests.
+    -cons: ..A lot more work to implement.
+
+In the end, we decided to go with the String option. I asked Mr Potter about getting around the issue of having to 
+make every class serializable - and he didn't seem to think such a quick fix existed. So that sealed the deal.
+
+Problems we found:
+We have found a couple of bugs that we picked up in the unit tests and quickly fixed, we have had a pretty smooth ride this week.
+Eddie has finalized implementation of the heuristic path-finding methods that I work on with him meeting (heuristics: walls left, distance to finish etc.) 
+And it works great - but along the way we have lost the ability for AI Players to perform jumps. <-- to fix!
+We have designed a new method of running the game.load() method - which plays the entire string of moves like a validator game in order
+to get it back to the saved state, then we change the game object to a console game -> and pass the board to this new game object
+so that the game can be played via the console from this state onwards. It sounds technical - but basically we had noticed that any AI Players were
+loaded back in as human players in our previous implementation of game.load() - and this change solved the problem.
+I spent the rest of the lab creating classes for different types of AI Players (based on the complexity of their move finding algorithms). And I wrote
+the user interface code for choosing the level of difficulty for AI players.
+
+TO DO:
+Fix the jump bug
+Implement save/load perfectly - test every possible condition and get it working from the console.
+Minor bug: modify board.undo to undo the last TWO moves (it only does 1 at the moment) - same for board.redo()
+
+------------------------------------------------------------------------------------------------------------
+
+Bits and pieces before final weekend (23 - 27 May)
+
+This entry details the minor changes that have been made to our project this week. Most of our work has gone into
+testing (overseen by Nate), algorithm implementation (overseen by Eddie), and finalization of user interface (which
+I was in charge of). Our hard work in the previous few weeks has really paid off. Apart from the gruelling debugging 
+process with our implementation of AI algorithms, this week has allowed us to sit back, relax and enjoy our game! 
+I've spent a lot of time with the user interface, deciding on final commands (and implementing save / load and
+undo / redo to work from console) and running through every possible test case I could think of. I've started to 
+neaten up all the javadoc and remove any redundant/repeated code. I've also rewritten the interface classes to reflect
+any methods that we've moved/deleted/added (but there wasn't much to change since our revised design).
+
+TO DO:
+Build more test cases (you can never have enough).
+Write the documentation for final submission.
+Get the minimax algorithm sorted out for MultipleLookAIPlayers - it's not working for some reason!
+-------------------------------------------------------------------------------------------------------------
+
+Saturday 	28 May
+
+I started work straight away on Mr Potter's prescribed tests (after rewriting the validator class to handle Lists of Strings)
+ - and every single one failed. I soon realised that it was because our 'player1' was Potter's 'player2' in terms of starting
+ coordinates. So I spent most of the morning rewriting our board class and our own unit tests to reflect this difference.
+All is passing. While Nate and Eddie were working, I spent the rest of the day trawling through the AI Player algorithms - I
+still can't see why our minimax algorithm for multiple looks ahead does not evaluate properly. 
+
+
+TO DO:
+- (Nate) finish javadoc for all code 
+- (Eddie) fix AI algorithm if we can finally work out what's going on
+- (Elyse) prepare us for submission and presentation
+
+-------------------------------------------------------------------------------------------------------------
+
+Sunday    29 May
+
+Eddie found the (tiiiny) error in minimax - can't believe he managed to see that we didn't multiply by -1 at one point in the evaluation.
+We were so happy to see our 'hard' players finally making moves!
+Nate got to work straight away on writing tests for load / save operations while I wrote the readme.txt file.
+I have no idea what is meant by "a tick-off list of project requirements" - so I asked if anyone knew on the forum and eventually emailed Tim - I'll have to write it tomorrow morning.
+And that's about it! We spent a good four hours on Skype today making sure we hadn't missed anything and performing further tests. 
+I think we've got one beautiful looking quoridor game! 
