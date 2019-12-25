@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
+		"terminal.integrated.rendererType": "dom",
+		"explorer.confirmDragAndDrop": false,
+	}
+}

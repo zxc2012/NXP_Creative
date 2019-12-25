@@ -1,10 +1,4 @@
 package quoridor;
-import gnu.io.CommPortIdentifier;
-import gnu.io.NoSuchPortException;
-import gnu.io.PortInUseException;
-import gnu.io.UnsupportedCommOperationException;
-import gnu.io.CommPort;
-import gnu.io.SerialPort;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.io.BufferedReader;
@@ -321,70 +315,6 @@ public class Board implements BoardInterface{
 		moveList.add(move);
 		moveListIndex++;
 		applyMove(move);
-	}
-		/**
-	 * 用于打开串口
-	 * 
-	 * @param portName
-	 *            串口名
-	 * @param baudrate
-	 *            波特率
-	 * @return 返回串口
-	 */
-	public static final SerialPort portParameterOpen(String portName, int baudrate) {
-		SerialPort serialPort = null;
-		try { // 通过端口名识别串口
-			CommPortIdentifier portIdentifier = CommPortIdentifier.getPortIdentifier(portName);
-			// 打开端口并设置端口名字 serialPort和超时时间 2000ms
-			CommPort commPort = portIdentifier.open(portName, 1000);
-			// 进一步判断comm端口是否是串口 instanceof
-			if (commPort instanceof SerialPort) {
-				System.out.println("SerialPortNumber：" + portName);
-				// 进一步强制类型转换
-				serialPort = (SerialPort) commPort;
-				// 设置baudrate 此处需要注意:波特率只能允许是int型 对于57600足够
-				// 8位数据位
-				// 1位停止位
-				// 无奇偶校验
-				serialPort.setSerialPortParams(baudrate, SerialPort.DATABITS_8, SerialPort.STOPBITS_1,
-						SerialPort.PARITY_NONE);
-				// 串口配制完成 log
-				System.out.println("串口参数设置已完成，波特率为" + baudrate + ",数据位8bits,停止位1位,无奇偶校验");
-			} else { // 不是串口
-				System.out.println("该com端口不是串口,请检查设备!");
-				// 将com端口设置为null 默认是null不需要操作
-			}
-
-		} catch (NoSuchPortException e) {
-			e.printStackTrace();
-		} catch (PortInUseException e) {
-			e.printStackTrace();
-		} catch (UnsupportedCommOperationException e) {
-			e.printStackTrace();
-		}
-
-		return serialPort;
-	}
-	/*
-	 * 上位机接收数据 串口对象seriesPort 接收数据buffer 返回一个byte数组
-	 */
-	public static byte[] uartReceiveDatafromSingleChipMachine(SerialPort serialPort) {
-		byte[] receiveDataPackage = null;
-		InputStream in = null;
-		try {
-			in = serialPort.getInputStream();
-			// 获取data buffer数据长度
-			int bufferLength = in.available();
-			while (bufferLength != 0) {
-				receiveDataPackage = new byte[bufferLength];
-				in.read(receiveDataPackage);
-				bufferLength = in.available();
-
-			}
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		return receiveDataPackage;
 	}
 	/**
 	 * Read one line from user input
